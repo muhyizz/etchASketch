@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EtchASketch</title>
+    <link rel="stylesheet" href="style.css"/>
+    
 </head>
 <body>
-    
+    <div class="flex-container"></div>
+    <div class="title"><h1>Etch A Sketch</h1></div>
+    <div class="content">
+        <div class="board"></div>
+        <div class="button">
+            <button onclick="changeColor('black')">Black</button>
+            <button onclick="changeColor('white')">Eraser</button>
+            <button onclick="changeColor('gray')">Gray</button>
+            <button onclick="changeColor('random')">Random</button>
+            <button onclick="resetBoard()">Reset</button>
+        </div>
+        <div>
+            <input type="text" 
+            placeholder="Size of Board" 
+            value="16" 
+            onchange="changeSize(this.value)"/>
+            <button>Set Size</button>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>
