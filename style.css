@@ -1,5 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,600&family=Orbitron:wght@400;600;700&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+*{
+    font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+body{
+    justify-items: center;
+
+    background-color: aliceblue;
+}
+.title h1{
+    display: grid;
+    justify-items: center;
+
+    margin-top: 10px;
+    padding: 0 100px;
+    
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.content{
+    display: grid;
+    justify-items: center;
+}
+
 .board{
+    display: grid;
+
     width: 500px;
     height: 500px;
-    display: grid;
+    margin: 5px;
+
+    box-shadow: inset -3em 3em rgba(0,0,0,0.1), 0 0 0 2px rgba(255,255,255),
+                0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+
+    margin: 5px 0px;
+    
+}
+
+.color{
+    margin: 5px 0px;
+}
+
+.label{
+    margin: 5px 0px;
+}
+
+.error{
+    display: none;
 }
